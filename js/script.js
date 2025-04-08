@@ -6,17 +6,15 @@
 
 "use strict"
 
-function calculatearea() {
+function calculateCelcius() {
   // input
-  const abase = parseInt(document.getElementById('a-base').value);
-  const bbase = parseInt(document.getElementById('b-base').value);
-  const height = parseInt(document.getElementById('height-length').value);
-    
+  const fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
 
   // process
-    const trapezoidarea = [(abase + bbase) / 2] * height
+  const celcius = (fahrenheit - 32) * 5/9; 
 
   // output
-  document.getElementById('area').innerHTML = 'area is:' + trapezoidarea + 'mm²'
+  document.getElementById('temperature').innerHTML = 'The Temperature is ' + celcius + '°'
 }
+
 
